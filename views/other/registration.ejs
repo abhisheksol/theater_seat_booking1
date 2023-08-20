@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        .registration-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 360px;
+            text-align: center;
+        }
+        
+        .registration-container h2 {
+            color: #333;
+            margin-bottom: 16px;
+        }
+        
+        .registration-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .registration-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .registration-form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .registration-form button:hover {
+            background-color: #0056b3;
+        }
+        
+        .login-link {
+            display: block;
+            margin-top: 16px;
+            color: #007BFF;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hello welcome to registration page...</h2>
+
+    <form action="/registration" method="post">
+        <label for="">Name :</label>
+        <input type="name" name="name" id="name">
+
+        <br>
+        <label for="">Phone NO:</label>
+        <input type="phoneno" name="phoneno" id="phoneno">
+        <br>
+
+        <label for="">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <br><label for="">password:</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="">Time</label>
+        
+        <input type="date" name="datetime" id="datetime">
+        <button type="submit">submit</button>
+    </form>
+    <a href="/login">Go to login</a>
+
+
+</body>
+
+</html>
